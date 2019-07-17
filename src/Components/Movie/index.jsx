@@ -10,7 +10,7 @@ class Movie extends Component {
 
     this.props.searchMovie(id);
     setTimeout(() => {
-      this.props.history.push(`/movies/${id}`);
+      this.props.history.push(`${process.env.PUBLIC_URL}/movies/${id}`);
     }, 500);
   };
   render() {

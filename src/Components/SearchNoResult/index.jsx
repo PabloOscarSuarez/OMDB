@@ -1,5 +1,5 @@
 import React from "react";
-import PageNotResult from "./search_no_result.png";
+import PageNotResult from "./img/search_no_result.png";
 
 function NotFound() {
   return (

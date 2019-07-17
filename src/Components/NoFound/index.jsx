@@ -1,5 +1,5 @@
 import React from "react";
-import PageNotFound from "./NoNo.png";
+import PageNotFound from "./image/NoNo.png";
 import { Link } from "react-router-dom";
 import { MDBBtn } from "mdbreact";
 function NotFound() {
@@ -9,7 +9,7 @@ function NotFound() {
         <img src={PageNotFound} alt="NoImg" width="50%" />
       </div>
       <div className="text-center">
-        <Link to="/">
+        <Link to={`${process.env.PUBLIC_URL}/`}>
           <MDBBtn gradient="aqua" className="text-center">
             BACK HOME
           </MDBBtn>
