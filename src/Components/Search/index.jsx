@@ -20,7 +20,7 @@ class Search extends Component {
     this.props.searchMovies(search);
     this.setState({ search: "" });
     setTimeout(() => {
-      this.props.history.push("/movies");
+      this.props.history.push(`${process.env.PUBLIC_URL}/movies`);
     }, 600);
   };
   render() {
