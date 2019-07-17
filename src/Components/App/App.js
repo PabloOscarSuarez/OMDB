@@ -39,7 +39,7 @@ function App() {
               path={`${process.env.PUBLIC_URL}/movies/:id`}
               component={MovieInfo}
             />
-            <Route path="*" component={NotFound} />
+            <Route path={`${process.env.PUBLIC_URL}/*`} component={NotFound} />
           </Switch>
         </div>
       </Fragment>
