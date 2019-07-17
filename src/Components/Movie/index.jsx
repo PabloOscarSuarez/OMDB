@@ -11,7 +11,7 @@ class Movie extends Component {
     this.props.searchMovie(id);
     setTimeout(() => {
       this.props.history.push(`${process.env.PUBLIC_URL}/movies/${id}`);
-    }, 500);
+    }, 750);
   };
   render() {
     const { title, year, type, poster, id } = this.props;

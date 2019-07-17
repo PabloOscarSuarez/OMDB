@@ -21,7 +21,7 @@ class Search extends Component {
     this.setState({ search: "" });
     setTimeout(() => {
       this.props.history.push(`${process.env.PUBLIC_URL}/movies`);
-    }, 600);
+    }, 750);
   };
   render() {
     return (

@@ -25,7 +25,7 @@ class NavbarPage extends Component {
   render() {
     return (
       <MDBNavbar className="opa" color="morpheus-den-gradient" dark expand="md">
-        <Link to="/">
+        <Link to={`${process.env.PUBLIC_URL}/`}>
           <MDBNavbarBrand active="true">
             <strong className="white-text">HOME</strong>
           </MDBNavbarBrand>
@@ -37,10 +37,14 @@ class NavbarPage extends Component {
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem active="true">
-              <MDBNavLink to="/user/login">Login</MDBNavLink>
+              <MDBNavLink to={`${process.env.PUBLIC_URL}/user/login`}>
+                Login
+              </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/user/register">Register</MDBNavLink>
+              <MDBNavLink to={`${process.env.PUBLIC_URL}/user/register`}>
+                Register
+              </MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>

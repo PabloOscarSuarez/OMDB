@@ -5,7 +5,7 @@ const MoviePage = ({ title, poster, year, type, id, movieInfo }) => {
   return (
     <MDBCol lg="3" md="12" className="mb-lg-0 mb-4">
       <MDBView hover className="rounded z-depth-5 mb-4" waves>
-        <img className="img-fluid" src={poster} alt="" />
+        <img className="img-fluid text-center" src={poster} alt="" />
         <MDBMask overlay="white-slight" />
       </MDBView>
 

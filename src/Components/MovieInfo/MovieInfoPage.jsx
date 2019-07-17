@@ -61,7 +61,7 @@ const MovieInfoPage = ({ movieInfo }) => {
               by:
               <strong>{Director}</strong>, Año: {Year}
             </p>
-            <Link to="/">
+            <Link to={`${process.env.PUBLIC_URL}/`}>
               <MDBBtn color="success" size="md" className="waves-light ">
                 Back Home
               </MDBBtn>
